@@ -1,0 +1,36 @@
+.avatar-flip {
+  perspective: 1000px;
+  width: 256px;
+  height: 256px;
+  margin: auto;
+}
+
+.avatar-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.avatar-flip:hover .avatar-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.avatar-front, .avatar-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 9999px; /* hace que siga redondo */
+  object-fit: cover;
+}
+
+.avatar-front {
+  z-index: 2;
+}
+
+.avatar-back {
+  transform: rotateY(180deg);
+}

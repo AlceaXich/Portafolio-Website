@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import FlipAvatar from "./FlipAvatar"
 
 export default function About() {
   return (
@@ -12,12 +13,8 @@ export default function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        {/* Avatar */}
-        <img
-          src="/profile-avatar.png"
-          alt="Avatar de Shim"
-          className="rounded-full w-64 h-64 object-cover mx-auto md:mx-0 shadow-lg border-4 border-white/20"
-        />
+        {/* Avatar con flip */}
+        <FlipAvatar />
 
         {/* Texto */}
         <div>
