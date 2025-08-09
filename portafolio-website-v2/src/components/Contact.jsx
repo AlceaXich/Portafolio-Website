@@ -1,5 +1,16 @@
 import { FaGithub, FaLinkedin, FaGitlab, FaDiscord } from 'react-icons/fa'
 
+/**
+ * Componente Contact.
+ *
+ * Sección de Contacto que incluye un formulario y redes sociales.
+ * Utiliza animaciones con Formspree y componentes para las redes sociales.
+ *
+ * @component
+ * <Contact />
+ *
+ * @returns {JSX.Element} Sección "Contacto" con formulario y redes sociales.
+ */
 export default function Contact() {
   return (
     <section id="contacto" className="px-4 py-16 max-w-3xl mx-auto text-center">

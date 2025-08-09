@@ -1,6 +1,22 @@
 import { useState } from "react"
 import "../FlipAvatar.css"
 
+/**
+ * Componente FlipAvatar.
+ *
+ * Muestra un avatar con un efecto de volteo (flip) que alterna entre
+ * una imagen ilustrada y una imagen real. El efecto se logra mediante CSS
+ * y puede utilizarse como parte de una sección de presentación personal.
+ *
+ * Incluye una capa invisible para prevenir el menú contextual del clic derecho.
+ *
+ * @component
+ * @example
+ * // Uso básico:
+ * <FlipAvatar />
+ *
+ * @returns {JSX.Element} Avatar animado con efecto de volteo.
+ */
 export default function FlipAvatar() {
   return (
     <div className="avatar-flip">

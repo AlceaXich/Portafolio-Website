@@ -1,10 +1,21 @@
+/**
+ * Componente Projects.
+ *
+ * Sección de lista proyectos y tecnologias utilizadas.
+ * Utiliza animaciones con Framer Motion y estilos con Tailwind CSS.
+ *
+ * @component
+ * <Projects />
+ *
+ * @returns {JSX.Element} Sección "Proyectos" se incluye titulo, description, tecnologias.
+ */
 export default function Projects() {
   const projectsList = [
     {
       title: "Mi Portafolio Personal",
       description: "Un sitio web con temática del universo para mostrar mis habilidades y proyectos.",
       technologies: ["React", "TailwindCSS", "Vite"],
-      link: "#", // Cambia esto por tu enlace real si lo subes
+      link: "#",
     },
     {
       title: "Aplicación del clima",
@@ -12,7 +23,6 @@ export default function Projects() {
       technologies: ["Android", "Koltlin", "OpenWeather"],
       link: "#",
     },
-    // Agrega más proyectos si tienes
   ]
 
   return (

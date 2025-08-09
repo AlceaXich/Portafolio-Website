@@ -2,7 +2,16 @@
 //useEffect: hacer cosas cuando el componente carga o cambia algo
 import { useState, useEffect } from "react";
 
-//Creacion del componente Header
+/**
+ * Componente Header.
+ *
+ * Sección de Cabecera,donde se encuentran las secciones: Inicio  Proyectos, sobre mi y contacto.
+ *
+ * @component
+ * <Header />
+ *
+ * @returns {JSX.Element} Sección de Header
+ */
 export default function Header() {
     //Creacion de un estado: darkmode es true o false y setDarkMode funcion para luego cambiar el valor
     const [darkMode, setDarkMode] = useState(() => {

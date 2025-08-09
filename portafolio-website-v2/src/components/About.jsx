@@ -1,6 +1,18 @@
 import { motion } from "framer-motion"
 import FlipAvatar from "./FlipAvatar"
 
+/**
+ * Componente About.
+ *
+ * Sección de presentación personal que incluye un avatar animado y una breve descripción.
+ * Utiliza animaciones con Framer Motion y estilos con Tailwind CSS.
+ *
+ * @component
+ * <About />
+ *
+ * @returns {JSX.Element} Sección "Sobre mí" con avatar y texto descriptivo.
+ */
+
 export default function About() {
   return (
     <section

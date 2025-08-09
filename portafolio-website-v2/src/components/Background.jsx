@@ -1,3 +1,13 @@
+/**
+ * Componente Background.
+ *
+ * Utiliza una imagen almacenada de manera local.
+ *
+ * @component
+ * <About />
+ *
+ * @returns {JSX.Element} Background con opacidad para el fondo.
+ */
 export default function Background() {
     return (
         <div className="fixed top-0 left-0 w-full h-full z-0 pointer-events-none">
