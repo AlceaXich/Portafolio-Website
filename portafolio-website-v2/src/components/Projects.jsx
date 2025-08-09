@@ -1,3 +1,4 @@
+import { FaGithub, FaLinkedin, FaGitlab, FaDiscord } from 'react-icons/fa'
 /**
  * Componente Projects.
  *
@@ -16,12 +17,14 @@ export default function Projects() {
       description: "Un sitio web con temática del universo para mostrar mis habilidades y proyectos.",
       technologies: ["React", "TailwindCSS", "Vite"],
       link: "#",
+      linkRepository: "https://github.com/AlceaXich/Portafolio-Website/tree/main/portafolio-website-v2",
     },
     {
       title: "Aplicación del clima",
       description: "Desarrollé una aplicación que muestra el clima diario de una ciudad, consultando información en tiempo real desde una API externa",
       technologies: ["Android", "Koltlin", "OpenWeather"],
       link: "#",
+      linkRepository: "https://github.com/AlceaXich/WeatherApp",
     },
   ]
 
@@ -50,6 +53,16 @@ export default function Projects() {
                 Ver proyecto →
               </a>
             )}
+            <div>{project.linkRepository && (
+              <a 
+                href={project.linkRepository}
+                target="_blank"
+                rel="noopener noreferrer">
+                  <FaGithub className="hover:text-purple-400 transition-colors" />
+              </a>
+            )}
+            </div>
+            
           </div>
         ))}
       </div>
